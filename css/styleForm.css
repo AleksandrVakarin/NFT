@@ -1,0 +1,261 @@
+body {
+    min-width: 350px;
+}
+.form-title {
+    padding: 35px 0 0 55px;
+    position: relative;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+
+}
+
+.nav-container {
+    padding-left: 338px;
+}
+
+.hover-menu {
+    display: none;
+}
+
+
+.form__logo {
+    width: 200px;
+    height: 32px;
+}
+
+.menu {
+    text-decoration: none;
+    color: var(--accent-color);
+    padding-left: 50px;
+    cursor: pointer;
+}
+
+.sign-up__button {
+    position: absolute;
+    width: 152px;
+    height: 60px;
+    background-color: var(--button-bg-color);
+    align-items: center;
+    right: 50px;
+    top: 20px;
+    cursor: pointer;
+}
+
+.sign-up__button-img {
+    padding-right: 10px;
+}
+
+.form-container {
+    padding-top: 35px;
+
+}
+.form__flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+
+}
+.create-account__img {
+    margin: 0;
+    padding: 0;
+    max-width: 610px;
+    max-height: 691px;
+}
+
+.form__h2 {
+    margin: 0;
+    padding-top: 35px;
+    margin-bottom: 0;
+    /* line-height: 75px; */
+    font-size: 51px;
+    font-weight: 600;
+    text-align: left;
+    /* max-width: 510px; */
+    color: var(--accent-color);
+    margin-bottom: 18px;
+    
+}
+.form__title {
+    margin: 0;
+    text-align: left;
+    max-width: 510px;
+    line-height: 35px;
+    color: var(--accent-color);
+    margin-bottom: 30px;
+    
+}
+
+.form__flex-input {
+    padding: 62px 0 0 60px;
+    max-width: 480px;  
+}
+.create-account__form {
+    padding-top: 40px;
+}
+
+.input {
+    border: none;
+    width: 330px;
+    height: 46px;
+    border-radius: 25px;
+    margin-bottom: 15px;
+    letter-spacing: 0.03em;
+}
+
+.user-name {
+    background-image: url('/img/FormImg/User.svg');
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    padding-left: 50px;
+}
+
+.user-email {
+    background-image: url('/img/FormImg/Envelope.svg');
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    padding-left: 50px;
+}
+.user-password {
+    background-image: url('/img/FormImg/LockKey.svg');
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    padding-left: 50px;
+}
+.user-password-confirm {
+    background-image: url('/img/FormImg/LockKey.svg');
+    background-repeat: no-repeat;
+    background-position: left 20px center;
+    padding-left: 50px;
+}
+
+.create-account__button {
+    margin-top: 15px;
+    width: 330px;
+    height: 46px;
+    background-color: var(--button-bg-color);
+    align-items: center;
+}
+
+@media screen and (max-width: 1279px) {
+    .nav-container {
+        padding-left: 155px;
+    }
+    .create-account__img {
+        width: 550px;
+    }
+    .form__flex-input {
+        padding: 62px 0 0 45px;
+    }
+    .create-account__button,
+    .input {
+        width: 325px;
+    }
+    
+  }
+  
+  @media screen and (max-width: 1080px) {
+    .nav-container {
+        padding-left: 55px;
+    }
+    .sign-up__button {
+        right: 35px;
+        width: 130px;
+    }
+    .menu {
+        padding-left: 20px;
+    }
+    .create-account__img {
+        width: 397px;
+        height: 635px;
+    }
+    .form-container {
+        padding-top: 25px;
+    }
+    .form__flex-input {
+        padding: 32px 0 0 35px;
+        width: 400px;
+    }
+    .form__h2 {
+        font-size: 38px;
+        padding-top: 10px;
+      
+    }
+    .form__title {
+        font-size: 16px;
+        line-height: 25px;
+    }
+  }
+
+@media screen and (max-width: 854px) {
+    .form-title {
+        padding-top: 10px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .hover-menu {
+        margin-right: 50px;
+        display: inline;
+    }
+    .sign-up__button,
+    .nav-container {
+        display: none;
+    }
+    .form__footer {
+        padding: 0 0 0 50px;
+    }
+    .subscribe__button {
+        margin-right: 50px;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .form__flex {
+        justify-content: center;
+        align-items: center;
+    }
+    .create-account__img {
+        min-width: 100%;
+        height: auto;
+        margin: 0;
+        padding: 0;
+    }
+    .create-account__button {
+        margin-bottom: 30px;
+    }
+    .form__footer {
+        padding-right: 30px;
+    }
+    .email__input {
+        width: 320px;
+        height: 50px;
+        margin-bottom: 15px;
+    }   
+    .subscribe__button {
+        width: 320px;
+        height: 50px;
+        display: block;
+        position: relative;
+    }     
+}
+
+@media screen and (max-width: 480px) {
+    .form__flex-input {
+        padding: 10px 0 0 10px;
+    }
+    .input {
+        width: 315px;
+    }
+    .create-account__button {
+        width: 315px;
+    }
+    .form__footer {
+        padding: 0 0 0 10px;
+    }
+    .subscribe__button {
+        margin-right: 0;
+        width: 315px;
+    }
+}
+
